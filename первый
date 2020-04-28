@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Nwu {
+    public static void main (String[]args)
+    {System.out.println(2+3);
+        int number=5;
+        int number1=2;
+        System.out.println(number*number1);
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("введите чсло 1:");
+        int число1 = scan.nextInt();
+        System.out.print("введите чсло 2:");
+        int число2 = scan.nextInt();
+        if (число1>число2) System.out.println("число 1 больше");
+        else if (число1<число2)System.out.println("число 2 больше");
+        else if (число1>=число2)System.out.println("число 1 и 2 равны");
+
+        System.out.print("введите сумму вклада:");
+        int x = scan.nextInt();
+        int вклад = x*100;
+
+        System.out.print("введите начисляемый прцент:");
+        int процент = scan.nextInt();
+        int вклад1 = вклад+(вклад*процент/100);
+        System.out.println(вклад1/100);int вклад2 = вклад1+(вклад1*процент/100);
+        System.out.println(вклад2/100);int вклад3 = вклад2+(вклад2*процент/100);
+        System.out.println(вклад3/100);int вклад4 = вклад3+(вклад3*процент/100);
+        System.out.println(вклад4/100);int вклад5 = вклад4+(вклад4*процент/100);
+        System.out.println(вклад5/100);
+
+} }
